@@ -1,0 +1,25 @@
+<ion-view view-title="Alerts">
+  <ion-content>
+
+  	<div class="list">
+
+        <a ng-repeat="alert in alerts" 
+           class="item">
+
+          <div class="row">
+          	<div class="col col-10 item-avatar">
+          		<img ng-src="{{ alert.friend }}">
+          	</div>
+          	<div class="col item-text-wrap">
+          		<p>{{ alert.name }} {{ alert.action }}</p>
+          	</div>
+          	<div class="col col-25 item-thumbnail-right item-text-wrap">
+          		<img ng-src = "{{ alert.post }}">
+          	</div>
+          </div>
+        </a>
+
+      </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,40 @@
+<ion-view>
+	
+	<ion-nav-title>
+		Benny Boy
+	</ion-nav-title>
+	
+	<ion-nav-buttons side="secondary">
+		<a class="button button-icon ion-gear-a" href="#/tab/settings"></a>
+	</ion-nav-buttons>
+	
+	<ion-content>
+		
+		<div class="list">
+
+		    <a class="item item-thumbnail-left">
+		      <img src="img/ben.png" href="#/propic">
+		      	<div class="row">
+		      		<div class="col"><center>3<br>Creations</center></div>
+					<div class="col"><center>29<br>Friends</center></div>
+		      	</div>
+				
+		      	<div class="row">
+		      		<div class="col button button-small button-stable"><center>Edit Profile</center></div>
+		      	</div>
+		    </a>
+			
+			<a class="item item-text-wrap">
+				Benny Boy
+				<p>This is my bio. Im a self taught artist dabbling in various different projects.</p>
+			</a>
+		</div>
+		
+		<img collection-repeat="photo in photos"
+		    item-width="125"
+		    item-height="125"
+		    ng-src="{{photo.file}}">
+		
+	</ion-content>
+	 
+</ion-view>
